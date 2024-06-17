@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Livros adcionados</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Livros adcionados</h1>
+        <ul>
+            {% for book in books %}
+            <li>
+                {{ book.title }} - {{ book.author }}
+                <a href="/edit_book/{{ book.id }}">Editar</a>
+                <a href="/delete_book/{{ book.id }}">Deletar</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="/index">Inicio</a>
+    </div>
+</body>
+</html>
