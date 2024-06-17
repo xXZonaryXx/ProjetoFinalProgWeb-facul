@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edite o livro</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Editar</h1>
+        <form method="post">
+            <label for="title">Titulo:</label>
+            <input type="text" id="title" name="title" value="{{ book.title }}">
+            <label for="author">Autor:</label>
+            <input type="text" id="author" name="author" value="{{ book.author }}">
+            <input type="submit" value="Update Book">
+        </form>
+    </div>
+</body>
+</html>
