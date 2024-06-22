@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    text-align: center;
+    background: #785151;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+header {
+    margin-top: 5rem;
+    height: 113px;
+    background: #D9D9D9;
+    animation: fadeInUp 0.5s ease-in-out 0.25s;
+    animation-fill-mode: both;
+}
+
+header h1 {
+    text-align: center;
+    color: #785151;
+    font-family: Italiana, sans-serif;
+    font-size: 96px;
+    font-weight: 400;
+}
+
+main {
+    align-items: center;
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    animation: fadeInUp 0.5s ease-in-out 0.5s;
+    animation-fill-mode: both;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: none;
+    border-radius: 10px;
+    background: #D9D9D9;
+    color: #785151;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    width: 40rem;
+    padding: 1rem;
+    margin-top: 12px;
+    animation: fadeInUp 0.5s ease-in-out 0.75s;
+    animation-fill-mode: both;
+}
+
+input[type="submit"] {
+    border: none;
+    border-radius: 10px;
+    background: #D9D9D9;
+    color: #785151;
+    font-family: 'Mulish', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    width: 26rem;
+    height: 4.3rem;
+    padding: 10px;
+    margin-top: 3rem;
+    cursor: pointer;
+    animation: fadeInUp 0.5s ease-in-out 1s;
+    animation-fill-mode: both;
+}
+
+input[type="submit"]:hover {
+    background: #a3a3a3;
+}
+
+main p {
+    color: white;
+    margin: 10px 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 15px;
+    animation: fadeInUp 0.5s ease-in-out 1.25s;
+    animation-fill-mode: both;
+}
+
+main p a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+footer {
+    text-align: center;
+    background: #D9D9D9;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    animation: fadeInUp 0.5s ease-in-out 1.5s;
+    animation-fill-mode: both;
+}
+
+footer p {
+    color: #000;
+    font-family: "Mulish", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

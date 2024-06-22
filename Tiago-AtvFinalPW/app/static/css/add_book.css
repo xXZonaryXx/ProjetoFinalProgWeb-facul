@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    text-align: center;
+    background: #785151;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+header {
+    margin-top: 3rem;
+    height: 8rem;
+    background: #D9D9D9;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-in-out 0.1s forwards;
+}
+
+header h1 { 
+    padding: 10px;
+    color: #785151;
+    font-family: Italiana, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+main {
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-in-out 0.2s forwards;
+}
+
+label {
+    text-align: left;
+}
+
+input[type="text"] {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 10px;
+    background: #D9D9D9;
+    color: #785151;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    width: 40rem;
+    padding: 1rem;
+    margin-top: 12px;
+}
+
+input::placeholder {
+    color: #785151;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-in-out 0.3s forwards;
+}
+
+.form-group label {
+    margin-top: 5px;
+    font-size: 25px;
+    color: #FFF;
+}
+
+input[type="submit"] {
+    border: none;
+    border-radius: 10px;
+    background: #D9D9D9;
+    color: #785151;
+    font-family: 'Mulish', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    width: 26rem;
+    height: 4.3rem;
+    padding: 10px;
+    margin-top: 3rem;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-in-out 0.4s forwards;
+}
+
+input[type="submit"]:hover {
+    background: #a3a3a3;
+}
+
+main p {
+    color: white;
+    margin: 10px 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 15px;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-in-out 0.5s forwards;
+}
+
+main p a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+footer {
+    text-align: center;
+    background: #D9D9D9;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-in-out 0.6s forwards;
+}
+
+footer p {
+    color: #000;
+    font-family: "Mulish", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

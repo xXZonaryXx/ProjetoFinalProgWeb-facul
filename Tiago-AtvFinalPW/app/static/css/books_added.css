@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  background-color: #785151;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  margin-top: 3rem;
+  height: 8rem;
+  background: #D9D9D9;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-in-out 0.1s forwards;
+}
+
+header h1 {
+  text-align: center;
+  color: #785151;
+  font-family: Italiana, sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  padding: 1rem;
+}
+
+.container {
+  flex: 1;
+  width: 80%;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #D9D9D9;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-in-out 0.2s forwards;
+}
+
+h1 {
+  font-family: Mulish, sans-serif;
+  font-size: 2.8rem;
+  color: #785151;
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-in-out 0.3s forwards;
+}
+
+.book-list {
+  list-style: none;
+  padding: 0;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-in-out 0.4s forwards;
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #000000;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-in-out 0.5s forwards;
+}
+
+.book-item:last-child {
+  border-bottom: none;
+}
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.book-author {
+  font-size: 16px;
+  color: #666666;
+}
+
+.book-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn, .delete-btn, .back-btn {
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-in-out 0.6s forwards;
+}
+
+.edit-btn {
+  background-color: #28a745;
+}
+
+.edit-btn:hover {
+  background-color: #218838;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #000000;
+  text-align: center;
+}
+
+.back-btn:hover {
+  background-color: #302f2f;
+}
+
+footer {
+  text-align: center;
+  background: #D9D9D9;
+  padding: 10px;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-in-out 0.7s forwards;
+}
+
+footer p {
+  color: #000;
+  font-family: "Mulish", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
