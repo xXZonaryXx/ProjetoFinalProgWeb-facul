@@ -35,11 +35,12 @@ cd app
 O servidor FastAPI será iniciado e a aplicação sera aberta no seu navegador.
 
 ## Configuração passo a passo
-- pip install -r requirements.txt
 
 - python -m venv venv
 
 - venv\Scripts\activate
+
+- pip install -r requirements.txt
 
 - cd app
 
