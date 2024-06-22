@@ -43,7 +43,7 @@ O servidor FastAPI será iniciado e a aplicação sera aberta no seu navegador.
 
 - cd app
 
-- uvicorn app.main:app --reload
+- uvicorn main:app --reload
 
 ## Funcionalidades
 
