@@ -1,51 +1,84 @@
-# Documentação do Projeto
+# Projeto da Nexus Library
 
-Projeto *Biblioteca Nexus*.
+Este é um projeto exemplo para um sistema de biblioteca utilizando FastAPI e SQLAlchemy.
 
-## Descrição
+## Pre-requisitos
 
-Este projeto é uma aplicação web para gerenciar uma biblioteca de livros e autores. Ela fornece uma API RESTful para realizar operações como registrar novos usuários, fazer login, adicionar livros e autores, e visualizar livros e autores por usuário.
+[Python](https://www.python.org/downloads/) -
+[HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) -
+[CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS) -
+[SQlite](https://www.sqlite.org/index.html) -
+[FastAPI](https://fastapi.tiangolo.com/)
+
+### Bibliotecas necessárias
+Para instalar as dependências, use o seguinte comando depois de fazer o clone desse repositorio para sua máquina
+
+```bash
+pip install -r requirements.txt
+```
+
+## Como executar o meu projeto
+
+1. Clone o repositório:
+
+ ```bash
+git clone git@github.com:xXZonaryXx/ProjetoFinalProgWeb-facul.git
+```
+
+2.  Entre na pasta correta (app):
+```bash
+cd app
+```
+
+**Acesso ao app:**
+
+O servidor FastAPI será iniciado e a aplicação sera aberta no seu navegador.
+
+## Configuração passo a passo
+- pip install -r requirements.txt
+
+- python -m venv venv
+
+- venv\Scripts\activate
+
+- cd app
+
+- uvicorn app.main:app --reload
 
 ## Funcionalidades
 
-- Registro de novos usuários
-- Login de usuários
-- Adição de livros por usuários autenticados
-- Adição de autores por usuários autenticados
-- Visualização de livros por usuário
-- Visualização de autores por usuário
-- Deletar livros
-- Deletar autores
-- Editar livros
-- Editar autores
+- Registro de novos usuários;
+- Login de usuários;
+- Adição de livros por usuários autenticados;
+- Adição de autores por usuários autenticados;
+- Visualização de livros por usuário;
+- Visualização de autores por usuário;
+- Deletar livros;
+- Deletar autores;
+- Editar livros;
+- Editar autores.
 
-## Configuração
+## Estrutura do Projeto
 
-uvicorn app.main:app --reload
+O projeto está estruturado da seguinte maneira:
 
-venv\Scripts\activate
+- **main.py**: Configuração do FastAPI, definição de rotas e inicialização do servidor, contendo todos os CRUDs e as necessecidades do servidor.
+  
+- **models/**: Definição dos modelos de dados utilizando SQLAlchemy.
 
-python -m venv venv
+- **Templates/**: Templates HTML usando Jinja2 para melhor renderização.
 
-fastapi
-uvicorn
-sqlalchemy 
-jinja2
+- **static/**: Arquivos estáticos como CSS e imagens.
 
-pip install -r requirements.txt
+- **requirements.txt**: Lista de dependências Python necessárias para o projeto.
 
-### Pré-requisitos
+- **README.md**: Documentação do projeto, incluindo instruções de uso e configuração.
 
-Antes de executar a aplicação,  e necessario ter os seguintes requisitos instalados em seu ambiente de desenvolvimento:
+## Tecnologias usadas
 
-- Python (versão X.X ou superior)
-- pip (gerenciador de pacotes do Python)
-- SQLite (ou outro banco de dados suportado pelo SQLAlchemy)
-
-## Execução
-
-uvicorn app.main:app --reload
-
-## Licença
-
-Este projeto está licenciado sob a MIT License.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+![Jinja](https://img.shields.io/badge/jinja-white.svg?style=for-the-badge&logo=jinja&logoColor=black)
+![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
